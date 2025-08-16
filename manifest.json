@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Ancla",
   "version": "1.0",
-  "description": "Detecta grooming y ciberacoso en tiempo real",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "description": "Extensión que detecta grooming y ciberacoso usando Gemini AI",
+  "permissions": ["storage", "scripting", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
@@ -13,7 +13,7 @@
       "js": ["content.js"]
     }
   ],
-  "icons": {
-    "48": "icon.png"
+  "action": {
+    "default_popup": "popup.html"
   }
 }
