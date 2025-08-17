@@ -2,8 +2,9 @@ import 'dotenv/config';
 import express from "express";
 import bodyParser from "body-parser";
 import fetch from "node-fetch";
-import cors from "cors";
+
 import Perspective from "perspective-api-client";
+import cors from "cors";
 
 const app = express();
 app.use(bodyParser.json());

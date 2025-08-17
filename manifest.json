@@ -3,7 +3,7 @@
   "name": "Ancla",
   "version": "1.0",
   "description": "Extensión que detecta grooming y ciberacoso usando Gemini AI",
-  "permissions": ["storage", "scripting", "tabs", "activeTab"],
+  "permissions": ["storage", "scripting", "tabs", "activeTab", "sidePanel"],
   "background": {
     "service_worker": "background.js"
   },
@@ -22,7 +22,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["tesseract.min.js"],
+      "resources": ["tesseract.min.js", "results.html", "results.js", "styles.css", "logo.png"],
       "matches": ["<all_urls>"]
     }
   ]
