@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent; /* para que el borde del popup no se vea rectangular */
+  width: 400px;
+}
+
+#popup-contenedor {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#icono{ width : 120px; height : auto ; object-fit: cover; display:block; margin: 0 auto;}
+h2 { color: #4CAF50; font-size: 20px; }
+
+/* Toggle switch estilo */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  margin 10px 0;
+}
+.switch input { display: none; }
+.slider {
+  position: absolute; cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc; transition: .4s;
+  border-radius: 40px;
+}
+.slider:before {
+  position: absolute; content: "";
+  height: 30px; width: 30px;
+  left: 5px; bottom: 5px;
+  background-color: white; transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider { background-color: #4CAF50; }
+input:checked + .slider:before { transform: translateX(30px); }
+
+/* Barras Perspective */
+.barra {
+  height: 12px;
+  border-radius: 6px;
+  margin: 5px 0;
+  background: #ddd;
+  position: relative;
+}
+.barra span {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  text-align: right;
+  font-size: 10px;
+  padding-right: 4px;
+  color: #fff;
+}
