@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Protección Anti-Ciberacoso</title>
-  <style>
-    body { font-family: Arial, sans-serif; width: 250px; padding: 10px; }
-    h2 { color: #4CAF50; font-size: 16px; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-  <h2>Extensión Activa ✅</h2>
-  <p>Los mensajes serán analizados en tiempo real.</p>
+  <div id="popup-contenedor">
+    <img src="logo.png" id="icono" alt="Icono">
+    <h2>Protección Anti-Ciberacoso</h2>
+    <p>Activa la Protección para analizar el contenido</p>
+
+    <label class="switch">
+      <input type="checkbox" id="toggle-proteccion">
+      <span class="slider"></span>
+    </label>
+    <p id="estado">Extensión Desactivada ❌</p>
+  </div>
+  <script src = "popup.js"></script>
 </body>
+
 </html>
